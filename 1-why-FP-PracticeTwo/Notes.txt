@@ -1,0 +1,207 @@
+
+
+-----------------------------------------------
+ what is object ?
+ 
+ 	- data,info,attr,prop    ==> state
+ 	- func,method,work.oprn  ==> behavior
+ 	- loc,addr,pointer,ref   ==> identity
+ 	
+ 	
+ 	 obj ==> sbi
+ 	 
+
+ 	 obj's template  ==> class
+ 	 
+ 	 	-state-def
+ 	 	-behavior
+ 	 	
+ 	
+ 	class ==> instances/objects
+ 	
+----------------------------------------------- 	 	
+
+ OO concepts
+ 
+ 
+    1. interface / abstraction
+    
+       why we need ?
+       
+       	-> easy to use/learn by dependent
+       	-> for loose-coupling
+       	
+    2. implementation / encapsulation
+    
+    	why we need ?
+    	
+        -> will hide obj's complexity
+          	
+    3. inheritance
+    
+    	-> re-use common state & behav from generalized type to specialized type
+    	
+     4. polymosphism
+     
+     	-> get different result on different strategy on same-obj
+     	
+      	
+---------------------------------------------------------      	
+
+  bank-appln
+  
+  	
+  	use-case :  txr(amount,from,to)
+  	
+  	
+  	step-1 => model
+  	
+  	 - Account	
+  	
+  	step-2 => layers(s)
+  	
+  	a. data/repository  ==> persisting logic
+  	b. service/business ==> processing logic
+  	c. web layer        ==> request/response logic
+  	
+  	
+---------------------------------------------------------  			
+  			
+  			
+    OO principles
+    
+    S — Single responsibility principle
+	O — Open for extension & closed for modification principle
+	L — Liskov substitution principle
+	I — Interface segregation principle
+	D — Dependency Inversion principle
+    			
+
+---------------------------------------------------------   	
+  	
+  	
+  	OO patterns
+  	
+  	1. creational
+  	2. structural
+  	3. behavioral
+
+---------------------------------------------------------   	
+
+
+
+
+How to write function in Java ?
+
+
+
+e.g
+
+//		TxnCondition txnCondition=new TxnCondition() {
+//			@Override
+//			public boolean test(Txn txn) {
+//				return txn.getAmount()==amount;
+//			}
+//		};
+
+			|
+			|
+			V
+
+
+//			var=public boolean test(Txn txn) {
+//				return txn.getAmount()==amount;
+//			}
+
+			|
+			|
+			|
+			V
+
+
+//			var=boolean test(Txn txn) {
+//				return txn.getAmount()==amount;
+//			}
+
+			|
+			|
+			|
+			V
+
+//			var=test(Txn txn) {
+//				return txn.getAmount()==amount;
+//			}
+
+
+            |
+			|
+			|
+			V
+
+
+//			var=(Txn txn) {
+//				return txn.getAmount()==amount;
+//			}
+
+
+
+            |
+			|
+			|
+			V
+
+
+//			var=(Txn txn) -> {
+//				return txn.getAmount()==amount;
+//			}
+
+  			|
+			|
+			|
+			V
+
+
+
+//			var=(txn) -> {
+//				return txn.getAmount()==amount;
+//			}
+
+
+          
+
+
+
+//			var=(txn) -> txn.getAmount()==amount;   
+
+            |
+			|
+			|
+			V
+
+
+//	TxnCondition var=txn-> txn.getAmount()==amount;     function-in-java / Lambda expression
+
+
+
+
+
+//---------------------------------------------------------------
+
+
+why i should use ud=se Functional programming in java ?
+
+
+  ==> to write clean & concise code
+  
+      i.e we can sepearate what & how logic in clean way
+      
+      that brings 'declarative style' code instead imperative-style
+
+
+
+//---------------------------------------------------------------
+
+
+
+
+
