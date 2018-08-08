@@ -1,0 +1,81 @@
+
+
+
+
+
+----------------------------------------------------
+
+First Class Functions 
+
+    - A function can be stored in a variable or value
+    - A parameter of a function can be a function
+    - The return value of a function can be a function
+    
+----------------------------------------------------  
+
+Variable capture in Lambda-expression
+
+	=> can access enclosing class variable
+	=> can access enclosing instance variable
+	=> can access final static local variable
+	
+
+----------------------------------------------------  
+    
+        
+closures
+----------
+
+A closure is a function having access to the parent scope, 
+even after the parent function has closed.
+
+
+
+----------------------------------------------------  
+
+  anonymous-inner-class vs Lambda
+  
+ 
+  	anonymous-inner-class
+  	
+  		==> new .class file
+  				
+    LE
+    
+    	=> no class 		
+  
+
+----------------------------------------------------  
+
+
+
+
+Method-Reference ( MR )
+--------------------------
+
+
+   => function-pointer in java-language
+   
+   why we need ?
+   
+   ==> alternative syntax for Lambda-expression 
+       when lambda just invoking any existing methods
+
+   ==> we can re-use existing methods in FP in easy way
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+	        
+        
+        
