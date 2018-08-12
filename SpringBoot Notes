@@ -1,0 +1,3 @@
+@Configuration - spring xml file
+@ComponentScan - equal to xml component sacn
+@import - import xml's already present one - if u dont wanna change
